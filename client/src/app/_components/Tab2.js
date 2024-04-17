@@ -13,7 +13,10 @@ function Tab2() {
   const sendata = async () => {
     setLoading(true);
     await axios
-      .post("http://localhost:8000/", { followers: value, products: product })
+      .post("https://task-createnary.onrender.com/", {
+        followers: value,
+        products: product,
+      })
       .then((response) => {
         console.log("Response:", response.data);
         setData(response.data);
