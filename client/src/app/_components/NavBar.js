@@ -10,7 +10,7 @@ const NavBar = () => {
     <div className="bg-[#eaebec] md:h-[60px] h-[80px] mx-5 mr-[50px] md:w-fit  justify-center md:mx-auto flex   items-center  mb-2 rounded-xl px-5 bg-opacity-50">
       <div className="flex flex-col relative md:flex-row gap-2 w-full md:items-center md:gap-10">
         <h1 className="font-bold">Createnary</h1>
-        <div className="bg-white rounded-lg md:m-2  px-2  items-center flex flex-row">
+        <div className="bg-white rounded-lg md:m-2  px-2  items-center flex flex-row ">
           <CiSearch />
           <input
             className="rounded-lg pl-[5px] border-none outline-none text-black "
@@ -21,20 +21,20 @@ const NavBar = () => {
           <RxHamburgerMenu />
         </div>
 
-        <div className="flex-row hidden  md:flex gap-10">
-          <div className="flex flex-row gap-2 items-center">
+        <div className="flex-row hidden  md:flex gap-10 ">
+          <div className="flex flex-row gap-2 items-center cursor-pointer animate-slide-in hover:scale-110 transition-all">
             <BsCart2 />
             <h1 className="font-normal">Cart</h1>
           </div>
-          <div className="flex flex-row gap-2 items-center">
+          <div className="flex flex-row gap-2 items-center cursor-pointer animate-slide-in hover:scale-110 transition-all">
             <BsInfoCircle />
             <h1 className="font-normal">About</h1>
           </div>
-          <div className="flex flex-row gap-2 items-center">
+          <div className="flex flex-row gap-2 items-center cursor-pointer animate-slide-in hover:scale-110 transition-all">
             <TfiHeadphoneAlt />
             <h1 className="font-normal">Contact</h1>
           </div>
-          <div className="flex flex-row gap-2 items-center border rounded-lg border-black px-1">
+          <div className="flex flex-row gap-2 items-center border rounded-lg border-black px-1 cursor-pointer animate-slide-in hover:scale-110 transition-all">
             <button>Login</button>
             <IoIosArrowDown />
           </div>

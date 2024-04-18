@@ -77,12 +77,7 @@ function Tab2() {
         <div className="flex-1">
           <h3 className="pb-[15px]">What kind of influencer are you?</h3>
           <select className="border-gray-400 bg-white px-[10px] border w-full  rounded-md py-[5px]">
-            <option
-              className="text-gray-400"
-              value=""
-              defaultValue={""}
-              disabled
-            >
+            <option className="text-gray-400" selected disabled>
               Select influencer type?
             </option>
             <option value="micro">Micro-Influencer</option>

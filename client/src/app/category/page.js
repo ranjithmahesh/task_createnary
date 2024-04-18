@@ -10,7 +10,9 @@ function Category() {
   return (
     <>
       <div className="bg-[#f8fafb]] sm:px-[16px] md:px-[40px] lg:px-[70px] xl:px-[120px] mb-[50px]">
-        <NavBar />
+        <div className="mt-4">
+          <NavBar />
+        </div>
         <div className="  h-[100%] w-full flex md:flex-row flex-col  ">
           <div className=" flex-1  h-full  flex  items-center  ">
             <div className="font-bold text-[20px] md:ml-auto mr-14   mt-[50px] md:w-[48%]    ">
@@ -28,13 +30,13 @@ function Category() {
               </button>
             </div>
           </div>
-          <div className="flex flex-1 flex-col h-full border-l-2 gap-10 border-[#d6d6d6]  ">
+          <div className="flex flex-1 flex-col h-full border-l-2 gap-10 border-[#d6d6d6]  ml-5">
             {/* ///////// 1*/}
 
             {arr.map((item, i) => (
-              <div className="w-[80%]" key={i}>
-                <div className="flex flex-row gap-5 md:-ml-[15px] -ml-[14px]    ">
-                  <h1 className=" w-[40px] h-[25px] md:w-[30px] md:h-[25px] rounded-md text-white text-center bg-[#4a508e]">
+              <div className="w-[80%] " key={i}>
+                <div className="flex flex-row gap-5 md:-ml-[20px] -ml-[20px]    ">
+                  <h1 className="w-[70px] h-[35px] md:w-[50px] md:h-[34px] text-[25px]  rounded-md text-white text-center bg-[#4a508e]">
                     {item}
                   </h1>
                   <h1 className="font-semibold  ">
@@ -43,7 +45,7 @@ function Category() {
                   </h1>
                 </div>
                 <div className="flex flex-col  ml-8 mt-4 ">
-                  <p className="text-[12px] me-[120px]">
+                  <p className="text-[12px] ">
                     You receive trending & curated Itineraries and Insider deals
                     on Hotels & Flights to share
                   </p>

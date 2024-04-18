@@ -22,7 +22,7 @@ function Home() {
 
   return (
     <div
-      className="w-screen h-screen bg-cover bg-opacity-0"
+      className="w-screen md:h-[550px] h-[850px] bg-cover bg-opacity-0"
       style={{
         backgroundImage: isMobileView
           ? `url(${MobilView.src})`
