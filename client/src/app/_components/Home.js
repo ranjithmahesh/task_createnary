@@ -12,6 +12,7 @@ function Home() {
 
   useEffect(() => {
     function handleResize() {
+      console.log(window.innerWidth);
       setIsMobileView(window.innerWidth <= 768); // Adjust 768 as per your breakpoint
     }
 
@@ -34,14 +35,14 @@ function Home() {
       </div>
 
       <div>
-        <div className="flex    mt-[50px] items-center md:items-start md:mt-[75px] xl:mt-[15px] w-screen h-screen   gap-[100px] md:gap-[2px]  xl:gap-[350px]  flex-col   md:flex-row  sm:px-[16px] md:px-[40px] lg:px-[70px] xl:px-[120px]">
-          <div className="font-bold  text-[20px]   lg:text-[40px]  ">
+        <div className="flex   mt-[50px] items-center lg:items-start  w-screen h-screen   gap-[100px]  flex-col   lg:flex-row  sm:px-[16px] md:px-[40px] lg:px-[70px] xl:px-[120px]">
+          <div className="font-bold text-[20px]   md:text-[40px]  ">
             <h1 className="">Welcome To India’s First </h1>
             <h1 className="text-[#4a508e]">Creator’s Marketplace </h1>
-            <h2 className="text-[12px] md:text-[18px] lg:text-[22px] md:mt-[44px] ">
+            <h2 className="text-[12px] md:text-[22px] md:mt-[44px] ">
               Create your first E-Store @ Zero Cost
             </h2>
-            <p className="text-[18px] hidden md:block md:text:[15px] lg:block font-normal mt-[28px] w-[500px] ">
+            <p className="text-[18px] hidden md:block font-normal mt-[28px] w-[500px] ">
               Empower your creativity with Createnary. Showcase, sell, and
               connect with a global audience effortlessly, turn your products
               into profits.
@@ -53,10 +54,10 @@ function Home() {
             </Link>
           </div>
 
-          <div className=" ">
+          <div className="">
             <Image
               src={Mobile}
-              className=" md:w-[550px] sm:w-[550px] w-[800px] object-cover  "
+              className=" lg:w-[550px] w-[800px] object-cover  "
             />
           </div>
         </div>
