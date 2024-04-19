@@ -128,13 +128,13 @@ function Tab2() {
         <div className="w-[350px]  gap-4 md:gap-0 md:mt-0 mt-[30px] md:flex-col flex-row flex mx-auto justify-center items-center text-start  ">
           <div>
             <h1 className="font-medium md:mt-[100px]">Monthly Earning</h1>
-            <div className="text-[#4a508e] font-semibold text-[30px]">
+            <div className="text-[#4a508e] font-semibold text-[30px] xl:text-center">
               {data && "₹ " + data.monthly}
             </div>
           </div>
           <div>
             <h1 className="font-medium md:mt-[20px]">Yearly Earning</h1>
-            <div className="text-[#4a508e] font-semibold text-[30px]">
+            <div className="text-[#4a508e] font-semibold text-[30px] xl:text-center">
               {data && "₹ " + data.yearly}
             </div>
           </div>
